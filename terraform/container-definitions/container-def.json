@@ -1,0 +1,15 @@
+[
+    {
+      "name": "ecs-task-family-timeoff-app",
+      "image": "503604998326.dkr.ecr.us-east-1.amazonaws.com/ecr-timeoff-app:latest",
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 3000,
+          "hostPort": 3000
+        }
+      ],
+      "memory": 512,
+      "cpu": 256
+    }
+]
