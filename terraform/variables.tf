@@ -19,5 +19,11 @@ variable "ecs_service_desired_count" {
 variable "lb_container_port" {
   type          = number
   description   = "Container port"
-  default       = 5637
+  default       = 3000
+}
+
+variable "desired_tasks" {
+  type          = number
+  description   = "Number of desired tasks in the container"
+  default       = 2
 }
