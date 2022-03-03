@@ -1,6 +1,6 @@
 [
     {
-      "name": "ecs-timeoff-app",
+      "name": "ecs-service-timeoff-app",
       "image": "503604998326.dkr.ecr.us-east-1.amazonaws.com/ecr-timeoff-app:latest",
       "essential": true,
       "portMappings": [
