@@ -22,7 +22,7 @@ As the infrastructure is created in the same repo of the application, a **tf-inf
 
 When a push is made to **tf-infra**, it automatically triggers the CodePipeline that is in charge of deploying the infrastructure to AWS. 
 
-Within AWS there are 2 CodeBuilds running:
+Within the CodePipeline there are 2 CodeBuilds running:
 
 * **tf-plan**: is responsible for executing a `terraform plan`
 * **tf-apply**: is responsible for executing a `terraform apply -auto-approve`
