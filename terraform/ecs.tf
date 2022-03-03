@@ -20,6 +20,13 @@ resource "aws_ecs_service" "ecs_service_timeoff" {
     launch_type     = "FARGATE"
     desired_count   = var.desired_tasks
 
+    load_balancer {
+        target_group_arn = "${aws_lb_target_group.target_group.arn}"
+        container_name   = "${aws_ecs_task_definition.ecs_task_timeoff.family}"
+        container_port   = var.lb_container_port
+    }
+
+
     network_configuration {
         subnets          = ["${aws_default_subnet.default_subnet_a.id}", "${aws_default_subnet.default_subnet_b.id}", "${aws_default_subnet.default_subnet_c.id}"]
         assign_public_ip = true
