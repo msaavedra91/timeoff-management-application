@@ -29,4 +29,4 @@ Within the CodePipeline there are 2 CodeBuilds running:
 
 ### Nodejs app
 
-In this case, any push to the **master** branch will automatically trigger the CodePipeline that is in charge of building the application: docker build, docker tag and docker push to ECR to later update the task definition in the ECS service and deploy the new task(s).
+In this case, any push to the **dev** branch will automatically trigger the CodePipeline that is in charge of building the application: docker build, docker tag and docker push to ECR to later update the task definition in the ECS service and deploy the new task(s).
