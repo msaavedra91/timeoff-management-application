@@ -3,8 +3,8 @@ run-as: root
 
 env:
   secrets-manager:
-    DOCKERHUB_PASS: DockerHubSecret:dockerhub_username
-    DOCKERHUB_USERNAME: DockerHubSecret:dockerhub_password
+    DOCKERHUB_PASS: DockerHubSecret:username
+    DOCKERHUB_USERNAME: DockerHubSecret:password
 
 phases:
   install:
