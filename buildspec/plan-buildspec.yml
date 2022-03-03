@@ -9,7 +9,7 @@ phases:
 
   build:
     commands:
-      - terraform plan
+      - terraform -chdir=ec2/ plan
 
   post_build:
     commands:
