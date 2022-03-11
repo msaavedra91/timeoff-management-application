@@ -9,6 +9,6 @@ resource "aws_s3_bucket" "timeoff_bucket" {
 
   tags = {
     CreatedBy   = "msaavedra91"
-    Environment = "dev"
+    Environment = "dev-test"
   }
 }
